@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+    <script th:src="@{/work.js}"></script>
+</head>
+<body>
+
+<div id="app">
+    <input type="text" id="inputKey" class="withindiv" placeholder="Enter song">
+    <input type="text" id="inputValue" class="withindiv" placeholder="Enter artist">
+    <button id="addButton" onclick="addItem()" class="withindiv">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+          </svg>
+    </button>
+    <ul id="itemList" class="withindiv"></ul>
+    <button id="submitButton" onclick="submitList()" class="withindiv" >
+        Submit
+    </button>
+</div>
+</body>
+</html>
