@@ -1,4 +1,6 @@
 # SpotifySortByYearJava
 This web application aims to allow the user to sort their music by original release date, using the Spotify Web API to retrieve song data.
 ## Installation 
-After cloning the repository, navigate to the `SpotifySortByYear` directory and run the `.\gradlew.bat bootRun` command in your terminal if you are on Windows.
+After cloning the repository, navigate to the `SpotifySortByYear` directory and run the `.\gradlew.bat bootRun` command in your terminal if you are on Windows, or `./gradlew bootRun` if you are on Mac or Linux. This will run the web application in `http://localhost:8080/`.
+## Spotify Web API
+For this web application to run as intended, you will need to obtain an access token to request data from the Spotify Web API. To do this, follow the instructions noted [here](https://developer.spotify.com/documentation/web-api/tutorials/getting-started#request-an-access-token), up to the "Request Artist Data", as you will only need the access token. After obtaining the access token, open `work.js` in the `SpotifySortByYear\src\main\resources\static` directory and paste the access token within the `const token = "";` variable in the `submitList()` function. After that, run the web application.
